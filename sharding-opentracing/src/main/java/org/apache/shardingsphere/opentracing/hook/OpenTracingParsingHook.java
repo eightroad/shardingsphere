@@ -38,7 +38,7 @@ public final class OpenTracingParsingHook implements ParsingHook {
         span = ShardingTracer.get().buildSpan(OPERATION_NAME)
                 .withTag(Tags.COMPONENT.getKey(), ShardingTags.COMPONENT_NAME)
                 .withTag(Tags.SPAN_KIND.getKey(), Tags.SPAN_KIND_CLIENT)
-                .withTag(Tags.DB_STATEMENT.getKey(), sql).startManual();
+                .withTag(Tags.DB_STATEMENT.getKey(), sql).start();
     }
     
     @Override

@@ -17,8 +17,8 @@
 
 package org.apache.shardingsphere.opentracing;
 
-import io.opentracing.NoopTracerFactory;
 import io.opentracing.Tracer;
+import io.opentracing.noop.NoopTracerFactory;
 import io.opentracing.util.GlobalTracer;
 import lombok.SneakyThrows;
 import org.apache.shardingsphere.underlying.common.exception.ShardingSphereException;
